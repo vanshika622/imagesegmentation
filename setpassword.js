@@ -1,4 +1,9 @@
 // Select the file input and submit button
+window.addEventListener('load',function(){
+    document.baseURI.includes('login.html')
+   const main= this.document.getElementById("main_container");
+    main.classList.add("blurbackground")
+})
 const fileInput = document.getElementById('imagefile');
 const submitBtn = document.getElementById('submitBtn');
 const substitutionMap = {
@@ -202,11 +207,11 @@ setPasswordBtn.addEventListener('click', async () => {
     chrome.storage.local.set({ 'jsondata': obj },()=>{
         console.log("password set")
     });
-const encryptedImageData = encryptString(imageDataString, substitutionMap);
-console.log(encryptedImageData)
-chrome.storage.local.set({ 'encryptedImageData': encryptedImageData },()=>{
-    console.log("password set")
-});
+// const encryptedImageData = encryptString(imageDataString, substitutionMap);
+// console.log(encryptedImageData)
+// chrome.storage.local.set({ 'encryptedImageData': encryptedImageData },()=>{
+//     console.log("password set")
+// });
 chrome.storage.local.set({ 'Isdataset': true },()=>{
     console.log("password set")
 });

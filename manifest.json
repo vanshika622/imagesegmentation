@@ -14,7 +14,7 @@
       "matches": ["*://*/*","<all_urls>"],
       "js": ["setpassword.js"]
     }],
-    "permissions": ["storage", "activeTab",  "https://example.com/", "declarativeContent"],
+    "permissions": ["storage", "activeTab",  "https://example.com/", "declarativeContent","webNavigation","<all_urls>"],
     
     "browser_action": {
       "default_icon": {
